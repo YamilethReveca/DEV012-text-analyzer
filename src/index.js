@@ -4,13 +4,12 @@ import analyzer from './analyzer.js';
 
 let contador= 0;
 
-document.querySelector(".palabras").innerHTML="Palabras:"+ contador;
-document.querySelector(".caracteres").innerHTML="Caracteres:"+ contador;
-document.querySelector(".sincaracteres").innerHTML="Carácter sin espacios:"+ contador;
-document.querySelector(".numeros").innerHTML="Números:"+ contador;
-document.querySelector(".sumanumeros").innerHTML="Suma números:"+ contador;
-document.querySelector(".promediolongitud").innerHTML="Promedio longitud:"+ contador;
-
+document.querySelector("li[data-testid='word-count']").textContent="Palabras:"+ contador;
+document.querySelector("li[data-testid='character-count']").textContent="Caracteres:"+ contador;
+document.querySelector("li[data-testid='character-no-spaces-count']").textContent="Carácter sin espacios:"+ contador;
+document.querySelector("li[data-testid='number-count']").textContent="Números:"+ contador;
+document.querySelector("li[data-testid='number-sum']").textContent="Suma números:"+ contador;
+document.querySelector("li[data-testid='word-length-average']").textContent="Promedio longitud:"+ contador;
 
 
 // aqui se escucha el eventos input del textarea
@@ -20,25 +19,25 @@ textarea.addEventListener("input",calcularValores);
 
 function calcularValores(e) {
   
-  document.querySelector(".palabras").innerHTML="Palabras:"+ analyzer.getWordCount(e.target.value);
-  document.querySelector(".caracteres").innerHTML="Caracteres:"+ analyzer.getCharacterCount(e.target.value);
-  document.querySelector(".sincaracteres").innerHTML="Carácter sin espacios:"+ analyzer.getCharacterCountExcludingSpaces(e.target.value);
-  document.querySelector(".numeros").innerHTML="Números:"+ analyzer.getNumberCount(e.target.value);
-  document.querySelector(".sumanumeros").innerHTML="Suma números:"+ analyzer.getNumberSum(e.target.value);
-  document.querySelector(".promediolongitud").innerHTML="Promedio longitud:"+ analyzer.getAverageWordLength(e.target.value);
+  document.querySelector("li[data-testid='word-count']").textContent="Palabras:"+ analyzer.getWordCount(e.target.value);
+  document.querySelector("li[data-testid='character-count']").textContent="Caracteres:"+ analyzer.getCharacterCount(e.target.value);
+  document.querySelector("li[data-testid='character-no-spaces-count']").textContent="Carácter sin espacios:"+ analyzer.getCharacterCountExcludingSpaces(e.target.value);
+  document.querySelector("li[data-testid='number-count']").textContent="Números:"+ analyzer.getNumberCount(e.target.value);
+  document.querySelector("li[data-testid='number-sum']").textContent="Suma números:"+ analyzer.getNumberSum(e.target.value);
+  document.querySelector("li[data-testid='word-length-average']").textContent="Promedio longitud:"+ analyzer.getAverageWordLength(e.target.value);
 }
 
-// boton limpiador de todos los li
+// evento click del boton que limpia el textarea y a su vez todos los li.
 let boton= document.getElementById("reset-button");
 let limpiar= document.querySelector("textarea[name='user-input']");
 boton.addEventListener("click", function(){
   limpiar.value="";
-  document.querySelector(".palabras").innerHTML="Palabras:"+ contador;
-  document.querySelector(".caracteres").innerHTML="Caracteres:"+ contador;
-  document.querySelector(".sincaracteres").innerHTML="Carácter sin espacios:"+ contador;
-  document.querySelector(".numeros").innerHTML="Números:"+ contador;
-  document.querySelector(".sumanumeros").innerHTML="Suma números:"+ contador;
-  document.querySelector(".promediolongitud").innerHTML="Promedio longitud:"+ contador;
+  document.querySelector("li[data-testid='word-count']").textContent="Palabras:"+ contador;
+  document.querySelector("li[data-testid='character-count']").textContent="Caracteres:"+ contador;
+  document.querySelector("li[data-testid='character-no-spaces-count']").textContent="Carácter sin espacios:"+ contador;
+  document.querySelector("li[data-testid='number-count']").textContent="Números:"+ contador;
+  document.querySelector("li[data-testid='number-sum']").textContent="Suma números:"+ contador;
+  document.querySelector("li[data-testid='word-length-average']").textContent="Promedio longitud:"+ contador;
       
 })
 
