@@ -32,7 +32,7 @@ El Analizador de texto es una aplicación que extrae métricas desde un texto y 
   * Medición de la longitud promedio de palabras (longitud media de las palabras):Permite el conteo de la longitud media de las palabras escritas en la caja de texto.
   
 
-  ![Analizador de texto](imagen-analyzer.png)
+  ![Analizador de texto](src/img/imagen-analyzer.png)
 
 ### Caracteristica HTML CSS Y JAVASCRIPT
 
