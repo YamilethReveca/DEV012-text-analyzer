@@ -2,7 +2,7 @@ import analyzer from './analyzer.js';
 
 // aqui inicio en 0 todo los li 
 
-let contador= 0;
+const contador= 0;
 
 document.querySelector("li[data-testid='word-count']").textContent="Palabras:"+ contador;
 document.querySelector("li[data-testid='character-count']").textContent="Caracteres:"+ contador;
@@ -14,7 +14,7 @@ document.querySelector("li[data-testid='word-length-average']").textContent="Pro
 
 // aqui se escucha el eventos input del textarea
 
-let textarea = document.querySelector("textarea[name='user-input']");
+const textarea = document.querySelector("textarea[name='user-input']");
 textarea.addEventListener("input",calcularValores);
 
 function calcularValores(e) {
@@ -28,8 +28,8 @@ function calcularValores(e) {
 }
 
 // evento click del boton que limpia el textarea y a su vez todos los li.
-let boton= document.getElementById("reset-button");
-let limpiar= document.querySelector("textarea[name='user-input']");
+const boton= document.getElementById("reset-button");
+const limpiar= document.querySelector("textarea[name='user-input']");
 boton.addEventListener("click", function(){
   limpiar.value="";
   document.querySelector("li[data-testid='word-count']").textContent="Palabras:"+ contador;
