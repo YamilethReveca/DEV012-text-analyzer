@@ -42,13 +42,11 @@ El Analizador de texto es una aplicación que extrae métricas desde un texto y 
 * El textarea tiene un atributo con un valor usar-name.
 * se creó una sección para contener el ul y sus hijos.
 * Un ul con 6 hijos , cada hijo tiene un atributo data-testid con valores únicos mencionados a continuación.
-
-- li data-testid valor= word-count con un atributo class con un valor contador.
-- li data-testid valor= character-count con un atributo class con un valor contador.
-- li data-testid valor= character-no-spaces-count con un atributo class con un valor contador.
-- li data-testid valor= number-count con un atributo class con un valor contador.
-- li data-testid valor= number-sum con un atributo class con un valor contador.
-- li data-testid valor= word-length-average con un atributo class con un valor contador.
+* li data-testid valor= word-count con un atributo class con un valor contador.
+* li data-testid valor= character-count con un atributo class con un valor contador.
+* li data-testid valor= character-no-spaces-count con un atributo class con un valor contador.* li data-testid valor= number-count con un atributo class con un valor contador.
+* li data-testid valor= number-sum con un atributo class con un valor contador.
+* li data-testid valor= word-length-average con un atributo class con un valor contador.
 
 * Un button con un atributo con valor reset-button;
 * Un footer con un hijo p, que se tiene el nombre del autor del proyecto
@@ -128,27 +126,23 @@ WEB-APIs(index.js)
 
 # 7.- Comandos y pruebas unitarias 
 
-| ------ | ------ |
-| GitHub |Crear una cuenta en Github.|
-| GitHub |Configura de cuenta Github con una llave SSH.|
-| GitHub |[phttps://github.com/YamilethReveca/DEV012-text-analyzer] |
-| GitHub | Creó un _fork_ para su proyecto.|
-| GitHub | Clonar repositorio del Github.  |
+# Github
+* Crear una cuenta en Github.
+* Configura de cuenta Github con una llave SSH.
+* Cree un _fork_ para su proyecto.
+* Clonar repositorio del Github.
 
 # Comando GitBash
 
-| -------- | --------------|
-| CARPETA  | commits      .|
-| COMANDOS | [npm install] |
-| COMANDOS | [npx playwright install chromium --with-deps] |
-| COMANDOS | [npm start] |
-| RUTA     | [ http://localhost:3000] |
 
+* CARPETA:  Crear una carpeta en la computadora con el proyecto clonado.  
+* Comando git clone (pegar la ruta del repositorio)
+* Colocar la ruta de la carpeta.
+* COMANDOS  [npm install] 
+* COMANDOS  [npx playwright install chromium --with-deps] 
+* COMANDOS  [npm start] 
+* RUTA      [ http://localhost:3000] 
 
-* **GitHub: Despliegue con GitHub Pages**
-
-| -------- | ------------|
-|[Github ] |La aplicación será desplegada en Github Pages.|
 
 
 ## Comando pruebas unitarias
@@ -175,6 +169,11 @@ Hacer que los sitios estén publicados (o _desplegados_) para que usuarias de
 la web puedan acceder a él es algo común en proyectos de desarrollo de software.
 
 En este proyecto, utilizaremos _Github Pages_ para desplegar nuestro sitio web.
+
+
+GitHub: Despliegue con GitHub Pages**
+
+|[Github ] |La aplicación será desplegada en Github Pages.|
 
 
 ***
