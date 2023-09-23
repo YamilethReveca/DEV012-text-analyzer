@@ -4,9 +4,9 @@
 
 * [1. Consideraciones generales](#1-consideraciones-generales)
 * [2. Preámbulo](#2-preámbulo)
-* [3. Funcionalidades](#4-funcionalidades)
-* [5. Criterios de aceptación mínimos del proyecto](#6-Criterios-de-aceptación)
-* [6. Pruebas](#7-pruebas)
+* [3. Funcionalidades](#3-funcionalidades)
+* [4. Criterios de aceptación mínimos del proyecto](#4-Criterios-de-aceptación)
+* [5. Pruebas](#5-pruebas)
 
 
 ***
@@ -47,7 +47,6 @@ El Analizador de texto es una aplicación que extrae métricas desde un texto y 
 * li data-testid valor= character-no-spaces-count con un atributo class con un valor contador.* li data-testid valor= number-count con un atributo class con un valor contador.
 * li data-testid valor= number-sum con un atributo class con un valor contador.
 * li data-testid valor= word-length-average con un atributo class con un valor contador.
-
 * Un button con un atributo con valor reset-button;
 * Un footer con un hijo p, que se tiene el nombre del autor del proyecto
 
@@ -81,7 +80,6 @@ El index.js sólo se obtiene las variables del evento input y el evento click de
 
 # WEB APIs
 
-
 * Se creó una variable que almacena el textarea del Dom.
 * Luego a la variable se agrega un EventListener para escuchar el evento input.
 * Cuando sucede un evento input en el textarea se llama a la función calcularValores, este dará las indicaciones que se quieren, en este caso, que muestre las metricas en cada uno de los li.
@@ -89,7 +87,7 @@ El index.js sólo se obtiene las variables del evento input y el evento click de
 * Las instrucciones son que borre el texto del textarea y lo deje como estaba al inicio y que todos los li inicialice en 0.
 
 
-# 6.- Criterios-de-aceptación
+# 4.- Criterios de aceptación.
 
 HTML
 
@@ -124,9 +122,10 @@ WEB-APIs(index.js)
 * Evento click para el botón.
 
 
-# 7.- Comandos y pruebas unitarias 
+# 5.- Comandos y pruebas unitarias.
 
 # Github
+
 * Crear una cuenta en Github.
 * Configura de cuenta Github con una llave SSH.
 * Cree un _fork_ para su proyecto.
@@ -134,15 +133,13 @@ WEB-APIs(index.js)
 
 # Comando GitBash
 
-
 * CARPETA:  Crear una carpeta en la computadora con el proyecto clonado.  
 * Comando git clone (pegar la ruta del repositorio)
 * Colocar la ruta de la carpeta.
-* COMANDOS  [npm install] 
-* COMANDOS  [npx playwright install chromium --with-deps] 
-* COMANDOS  [npm start] 
-* RUTA      [ http://localhost:3000] 
-
+* COMANDOS:[npm install] 
+* COMANDOS:[npx playwright install chromium --with-deps] 
+* COMANDOS:[npm start] 
+* RUTA:[ http://localhost:3000] 
 
 
 ## Comando pruebas unitarias
