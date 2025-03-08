@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Text-Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Contador</h1>
+  </header>
+
+  <main class="contenido">
+    <h2>Analizador de texto</h2>
+    <section class="contenido__flex">
+      <section class="items">
+        <ul class="ul">
+          <li data-testid="word-count" class="contador">Palabras:</li>
+          <li data-testid="character-count" class="contador">Caracteres:</li>
+          <li data-testid="character-no-spaces-count" class="contador">Carácter sin espacios:</li>
+          <li data-testid="number-count" class="contador">Números:</li>
+          <li data-testid="number-sum" class="contador">Suma números:</li>
+          <li data-testid="word-length-average" class="contador">Promedio longitud palabra:</li>
+        </ul>
+      </section>
+      <section class="items">
+      <section class="contenido__textarea">
+        <textarea name="user-input" rows="3" cols="70" placeholder="Ingresar texto aqui"></textarea>
+        <button id="reset-button" class="boton" type="submit">Limpiar</button>
+      </section>
+      </section>
+    </section>
+
+  </main>
+  <footer>
+    <p> Autora: Yamileth Caldera</p>
+  </footer>
+
+
+
+  <script src="index.js" type="module"></script>
+
+
+
+</body>
+
+</html>
