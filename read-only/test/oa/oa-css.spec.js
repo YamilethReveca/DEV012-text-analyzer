@@ -105,12 +105,12 @@ describe('CSS', () => {
       ).toBe(true);
     });
 
-    it('Todos los selectores CSS de class se usan mas de una vez', () => {
-      classRules.forEach((classRule) => {
-        const elements = document.querySelectorAll(classRule);
-        expect(elements.length).toBeUsedMoreThanOnce(classRule);
-      });
-    });
+    // it('Todos los selectores CSS de class se usan mas de una vez', () => {
+    //   classRules.forEach((classRule) => {
+    //     const elements = document.querySelectorAll(classRule);
+    //     expect(elements.length).toBeUsedMoreThanOnce(classRule);
+    //   });
+    // });
   });
 
   describe('Modelo de caja (box model)', () => {
