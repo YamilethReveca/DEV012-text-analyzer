@@ -15,8 +15,8 @@ jobs:
         node-version: 16
     - name: Install dependencies
       run: npm ci
-    - name: Install Playwright without dependencies
-      run: npx playwright install --no-deps
+    - name: Install Playwright Browsers
+      run: npx playwright install chromium --no-deps
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v4
