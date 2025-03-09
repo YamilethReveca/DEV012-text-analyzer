@@ -1,6 +1,6 @@
 import analyzer from './analyzer.js';
 
-// aqui inicio en 0 todo los li 
+// aqui inicio en 0 todo los li
 
 const contador= 0;
 
@@ -18,7 +18,7 @@ const textarea = document.querySelector("textarea[name='user-input']");
 textarea.addEventListener("input",calcularValores);
 
 function calcularValores(e) {
-  
+
   document.querySelector("li[data-testid='word-count']").textContent="Palabras:"+ analyzer.getWordCount(e.target.value);
   document.querySelector("li[data-testid='character-count']").textContent="Caracteres:"+ analyzer.getCharacterCount(e.target.value);
   document.querySelector("li[data-testid='character-no-spaces-count']").textContent="Carácter sin espacios:"+ analyzer.getCharacterCountExcludingSpaces(e.target.value);
@@ -38,7 +38,7 @@ boton.addEventListener("click", function(){
   document.querySelector("li[data-testid='number-count']").textContent="Números:"+ contador;
   document.querySelector("li[data-testid='number-sum']").textContent="Suma números:"+ contador;
   document.querySelector("li[data-testid='word-length-average']").textContent="Promedio longitud:"+ contador;
-      
+
 })
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
